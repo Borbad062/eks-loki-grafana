@@ -1,9 +1,7 @@
 
----
 
-### 2. **eks-loki-grafana** (Loki + Grafana)
+### **eks-loki-grafana** (Loki + Grafana)
 
-```markdown
 # Loki + Grafana Monitoring Stack on Amazon EKS
 
 Развертывание стека мониторинга и логирования **Grafana + Loki + Promtail** в Amazon EKS.
@@ -24,10 +22,3 @@
 - Доступ к кластеру EKS
 - S3 bucket создан (для хранения логов)
 - IAM роли для доступа к S3 настроены
-
-## 🚀 Установка
-
-### 1. Добавление репозитория Grafana
-```bash
-helm repo add grafana https://grafana.github.io/helm-charts
-helm repo update
