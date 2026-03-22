@@ -1,0 +1,33 @@
+
+---
+
+### 2. **eks-loki-grafana** (Loki + Grafana)
+
+```markdown
+# Loki + Grafana Monitoring Stack on Amazon EKS
+
+Развертывание стека мониторинга и логирования **Grafana + Loki + Promtail** в Amazon EKS.
+
+## 🎯 Цель проекта
+Настройка легковесного решения для сбора логов (Loki) и визуализации метрик/логов (Grafana).
+
+## 🛠 Технологии
+- **Grafana** — визуализация дашбордов
+- **Loki** — легковесное хранилище логов
+- **Promtail** — сбор логов с узлов и контейнеров
+- **AWS S3** — долговременное хранение чанков и индексов Loki
+- **Amazon EKS** — управляемый кластер Kubernetes
+- **Helm** — установка компонентов
+
+## 📋 Предварительные требования
+- Установленный `kubectl` и `helm`
+- Доступ к кластеру EKS
+- S3 bucket создан (для хранения логов)
+- IAM роли для доступа к S3 настроены
+
+## 🚀 Установка
+
+### 1. Добавление репозитория Grafana
+```bash
+helm repo add grafana https://grafana.github.io/helm-charts
+helm repo update
